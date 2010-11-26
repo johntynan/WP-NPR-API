@@ -78,7 +78,7 @@ Add the NPR API WordPress Plugin Bookmarklet to your browser.  To do this, just 
 <a title="Use this bookmarklet to automatically get the ID of a story at npr.org." href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://<?php
 $domain = $_SERVER['HTTP_HOST'];
 echo $domain;
-?>/wp-content/plugins/WP-NPR-API/sendvariables.js';})();">Add NPR Story to Wordpress!</a>" link into your browser's bookmarks bar. (In Internet Explorer, right-click on the link and choose "Add to favorites.") 
+?>/wp-content/plugins/WP-NPR-API/sendvariables.php';})();">Add NPR Story to Wordpress!</a>" link into your browser's bookmarks bar. (In Internet Explorer, right-click on the link and choose "Add to favorites.") 
 </p>
 
 
