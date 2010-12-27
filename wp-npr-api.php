@@ -88,11 +88,18 @@ echo $domain;
 
             <script type="text/javascript">
             var query = window.location.search.substring(1);
-            var pairs = query.split("&");
-            var nprid = pairs[1].substring(6,25);
-            // alert(nprid);
-            document.forms[0].elements[0].value = nprid;
-            // alert(document.forms[0].elements[0].value);     
+            // alert(query);
+            // alert(query.split("&").length)
+            if (query.split("&").length > '1'){
+                var pairs = query.split("&");
+                if (window['pairs'] != undefined){
+                    var nprid = pairs[1].substring(6);
+                    // alert(nprid);
+                    if (nprid != '')
+                    document.forms[0].elements[0].value = nprid;
+                    // alert(document.forms[0].elements[0].value);
+                }     
+            }
             </script>
 
             <?php if ( $api ): ?>
